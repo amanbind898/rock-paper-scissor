@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Rock Paper Scissors game</h1>
+        </div>
+        <!-- game -->
+        <div class="container">
+            <div class="human">
+                <div class="title"><h2>Select from one below</h2></div>
+                <div class="optionContainer">
+                  <div class="dabba">  <div class="circle" onclick="makeMove('rock')">
+                        <img src="images/rock.png" alt="rock" class="option">
+                    </div>
+                    <div class="title-img">Rock</div>
+                </div>
+                <div class="dabba"> 
+                    <div class="circle" onclick="makeMove('paper')">
+                        <img src="images/paper.png" alt="paper" class="option">
+                    </div>
+                    <div class="title-img">Paper</div>
+                    </div>
+                    <div class="dabba">                     <div class="circle" onclick="makeMove('scissor')">
+                        <img src="images/scissors.png" alt="scissor" class="option">
+                    </div>
+                    <div class="title-img">Scissor</div>
+                    </div>
+                </div>
+            </div> 
+            <div class="computer">
+                <div class="title"><h2>Computer</h2></div>
+                <div class="compSelection">
+                    <div class="dabba">
+                    <div class="box" id="compChoice">
+                      <!-- image by js -->
+                    </div>
+                    <div class="title-img">Computer's Choice</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="verdict">
+            <div class="title">
+                <h2>Verdict</h2>
+            </div>
+            <div class="result" id="result">
+                <h1>Make your move</h1>
+            </div>
+        </div>
+        <div class="score">
+            <div class="humanscore" id="humanScore">0</div>
+            <div class="compscore" id="compScore">0</div>
+        </div>
+        <div class="footer">
+            <p>Rock Paper Scissors game | Developed by <a href="https://amanbind898.github.io/">Aman Bind</a></p>
+        </div>
+    </div>
+
+    <!-- Game Over Popup -->
+    <div class="popup" id="gameOverPopup">
+        <div class="popup-content">
+            <p id="popupMessage"></p>
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
