@@ -24,9 +24,10 @@ function determineWinner(player, computer) {
         return 'You win!';
     } else {
         compScore++;
-        return 'You lose!';
+        return 'Computer wins!';
     }
 }
+
 
 function updateResult(result) {
     const resultElement = document.getElementById('result');
